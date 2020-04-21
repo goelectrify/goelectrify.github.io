@@ -1,0 +1,59 @@
+{
+	"project_detail" : [
+		{
+			"id":1,
+			"heading": "Nine Level Inverter with reduced number of switches",
+			"paragraph": [
+				"In this project, a nine level multilevel inverter is proposed. The proposed nine-level inverter generates a nine levels Ac output voltage with the appropriate gate signals design. The topology is a self-voltagebalanced across the series connected capacitors. The switching losses and the voltage stresses of power devices can be reduced in the proposed nine-level inverter. The operating principles of proposed inverter are discussed. The proposed multilevel inverter needs a single Dc voltage source with a series connection of four capacitors, three diodes, five acting switches for synthesizing output voltage levels and an H-bridge cell. Thus the proposed nine-level inverter helps in reducing the number of independent dc voltage sources and switches. Also the harmonic content in the output voltage is very less when compared conventional topologies. The proposed topology is verified by using MATLAB/Simulink and hardware prototype."
+			],
+			"images": [
+				"./static/img/projects/p1_1.jpg",
+				"./static/img/projects/p1_2.jpg",
+				"./static/img/projects/p1_3.jpg",
+				"./static/img/projects/p1_4.jpg"
+			]
+		},
+		{
+			"id":2,
+			"heading": "13 Levels module (k-type) with two DC sourced for multilevel inverter",
+			"paragraph": [
+				"This project presents a new reconfiguration module for asymmetrical multilevel inverters in which the capacitors are used as the DC links to creates the levels for staircase waveforms. This configuration of multilevel converter makes a reduction in DC sources. On the other hand, it is possible to generate 13 levels with lower DC sources. The proposed module of multilevel inverter generates 13 levels with two unequal DC sources (2VDC and 1VDC). It also involves two chargeable capacitors and 14 semiconductor switches. The capacitors are self-charging without any extra circuit. The lower number of components makes it desirable to use in wide range of applications. The module is schematized as two back-to-back T-type inverters and some other switches around it. Also, it can be connected as cascade modular which leads to a modular topology with more voltage levels at higher voltages. The proposed module makes the inherent creation of the negative voltage levels without any additional circuit (such as H-bridge circuit). Nearest level control switching modulation (NLC) scheme is applied to achieve high quality sinusoidal output voltage. Simulations are executed in MATLAB/Simulink and a prototype is implemented in the power electronics laboratory which the simulation and experimental results show a good performance.",
+				"This project presents an arrangement of semiconductor with mixed DC sources and capacitors as DC links to achieve maximum voltage levels from DC sources which improve economic implementation cost and power quality. This module uses just two unequal DC sources with the amount of 1VDC and 2VDC to generate 13 output voltage levels. On the other hand, an asymmetric multilevel module is introduced to produces 6 positive levels, 6 negative levels and zero level (totally 13 levels) without any additional circuit to create negative voltage levels.",
+				"Module is tested and it shows a good performance. THD% for one module is obtained 3.87% and 4.07% in simulation and experimental results, respectively thatsatisfy harmonics standard (IEEE519). THD% for cascade connection (two module) is calculated 1.99% in simulation and 2.26% in experimental results."
+			],
+			"images": [
+				"./static/img/projects/p2_1.jpg",
+				"./static/img/projects/p2_2.jpg",
+				"./static/img/projects/p2_3.jpg",
+				"./static/img/projects/p2_4.jpg"
+			]
+		},
+		{
+			"id":3,
+			"heading": "Solar PV Array fed Speed Control of Induction Motor Drive for Water Pumping",
+			"paragraph": [
+				"This project presents a solar PV array fed speed controlled induction motor drive for water pumping system. For the purpose of harnessing maximum possible power from solar PV array, a DC-DC converter is used. The soft starting of the motor is achieved to mitigate switching stress of the converter and then the maximum power is tracked using a well-known perturb and observe (P & O) control algorithm. With all due virtues associated with the induction motor in terms of the load characteristics, it is inferred that this motor is best suited to drive a water pump having non-linear torque-speed characteristic and it is observed that the performance is even better than the DC motor. The desired configuration is designed and simulated in MATLAB/Simulink platform and the design and control of the system are validated through demonstration simulation and hardware prototype results."
+			],
+			"images": [
+				"./static/img/projects/p3_1.jpg",
+				"./static/img/projects/p3_2.jpg",
+				"./static/img/projects/p3_3.jpg",
+				"./static/img/projects/p3_4.jpg"
+			]
+		},
+		{
+			"id":4,
+			"heading": "3 Phase Vienna Rectifier",
+			"paragraph": [
+				"Usage of conventional bridge type rectifiers for obtaining DC power from AC grid results in injection of unwanted current harmonics into the grid. Due to standards such as IEEE 519-1992 which limit the amount of harmonic injection into the mains, the bridge type rectifiers are being replaced by improved power quality converters which have reduced harmonic injection into the mains along with a host of other advantages. This project deals with the hardware development and control of a 3-phase, 3-level UPF rectifier which is a variant of an improved power quality converter named vienna rectifier. The 3-phase, 3-level rectifier is characterised by its input currents being almost sinusoidal, reduced input current ripple, controllable output DC voltage, high power density and UPF operation. Further, reduced losses and a lesser component count of the 3-phase, 3-level rectifier compared to the vienna rectifier indicate a greater scope for reduction in the size of the rectifier along with reduced packaging effort. In this work, the necessary hardware for the 3-phase, 3-level UPF rectifier has been developed, assembled and tested for a power level of 15kW and a DC bus voltage of 700V. A carrier based control strategy has been proposed for the control of the rectifier and its operation is validated on the MATLAB/simulink.",
+				"Based on the results obtained from simulation, a comparison has been done between the already existing hysteresis based control strategy and the proposed carrier based control strategy. Overall, the project work involves the building of the 3-phase, 3-level UPF rectifier setup, design of the controller parameters, validation of the proposed carrier based control strategy both in simulation/hardware and comparison of the proposed control strategy with an originally existing hysteresis based control strategy."
+			],
+			"images": [
+				"./static/img/projects/p4_1.jpg",
+				"./static/img/projects/p4_2.jpg",
+				"./static/img/projects/p4_3.jpg",
+				"./static/img/projects/p4_4.jpg"
+			]
+		}
+	]
+}

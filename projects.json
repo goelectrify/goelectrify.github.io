@@ -1,0 +1,28 @@
+{
+	"projects" : [
+		{
+			"project_id" : 1,
+			"title" : "Nine Level Inverter",
+			"image_src" : "./static/img/projects/p1_1.jpg",
+			"url" : "./project_detail.html?id=1"
+		},
+		{
+			"project_id" : 2,
+			"title" : "13 Levels Inverter",
+			"image_src" : "./static/img/projects/p2_1.jpg",
+			"url" : "./project_detail.html?id=2"
+		},
+		{
+			"project_id" : 3,
+			"title" : "Speed Control of Induction Motor",
+			"image_src" : "./static/img/projects/p3_1.jpg",
+			"url" : "./project_detail.html?id=3"
+		},
+		{
+			"project_id" : 4,
+			"title" : "3 Phase Vienna Rectifier",
+			"image_src" : "./static/img/projects/p4_1.jpg",
+			"url" : "./project_detail.html?id=4"
+		}
+	]
+}

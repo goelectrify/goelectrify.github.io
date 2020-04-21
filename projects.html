@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Electrify</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163865824-1"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'UA-163865824-1');
+	</script> -->
+	<!-- END of global site tag -->
+    <!-- Semantic Development -->
+	<!-- <link rel="stylesheet" type="text/css" href="./static/Semantic-UI-CSS-master/semantic.min.css"> -->
+	<!-- JQUERY-->
+	<script type="text/javascript" src="./static/jquery/jquery-3.4.1.min.js"></script>
+    <!-- Semantic Production -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.css">
+    <!-- Semantic development -->
+    <!-- <script type="text/javascript" src="./static/Semantic-UI-CSS-master/semantic.min.js"></script> -->
+	<!-- Semantic Production -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- development version, includes helpful console warnings -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <!-- production version, optimized for size and speed -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<!-- navbar and footer js-->
+	<script src="./static/js/import.js"></script>
+</head>
+<style type="text/css">
+	body {
+		width: 100%;
+		background-image: url("./static/img/bg3.jpg");
+		background-size: 100% 120%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		margin:0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	p {
+		font-size: 110%;
+	}
+</style>
+<body>
+<!-- NAVBAR -->
+	<div class="mb-3" id="navbar"></div>
+<!-- END of Navbar-->
+
+<!-- heading -->
+	<div class="ui container my-5">
+		<div class="ui basic segment">
+			<div class="ui horizontal divider header">
+				<h1 class="ui inverted header">Projects</h1>
+			</div>
+		</div>
+	</div>
+<!-- END of Heading -->
+<div class="ui stackable centered grid container" id="app">
+		<div class="five wide tablet four wide computer column" v-for="project in projects">
+			<a class="ui fluid card" v-bind:href="project.url">
+				<div class="image">
+					<img v-bind:src="project.image_src" >
+				</div>
+				<div class="content">
+					<div class="ui blue centered aligned header">{{ project.title }}</div>
+					<div class="center aligned description">
+						<i class="ui yellow star icon"></i>
+						<i class="ui yellow star icon"></i>
+						<i class="ui yellow star icon"></i>
+						<i class="ui yellow star icon"></i>
+						<i class="ui yellow star icon"></i>
+					</div>
+				</div>
+			</a>
+		</div>
+</div>
+<!-- Footer -->
+<div class="mt-5" id="footer"></div>
+<!-- END of Footer -->
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var res,id;
+		 $.getJSON("./projects.json",function(data){
+			 res = data;
+			 var app = new Vue({
+				 el: "#app",
+				 data: res
+			});
+		 });
+	});
+</script>
+</html>
