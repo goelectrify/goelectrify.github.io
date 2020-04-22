@@ -2,3 +2,4 @@ User-agent: *
 Allow: /index.html
 Allow: /projects.html
 Allow: /project_detail.html
+Sitemap: https://www.goelectrify.in/sitemap.xml
